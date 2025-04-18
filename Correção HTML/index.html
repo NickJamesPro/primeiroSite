@@ -1,0 +1,124 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<!-- A declaração do tipo de documento informa ao navegador que o documento é -->
+<html lang="pt-BR"> <!-- idioma do documento -->
+<!-- Atributo lang define o idioma do conteúdo -->
+
+<head> <!-- Cabeçalho do documento HTML -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projeto - Dragon Ball</title> <!-- Título da página -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Italiana&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+
+    <link rel="stylesheet" href="./src/css/estilos.css"> 
+
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body> <!-- Corpo do documento HTML -->
+    <main class="personagens"> <!-- Elemento principal da página -->
+        <div class="personagem selecionado">
+            <picture>
+              <source srcset="./src/imagens/bg-cyberstorm.png" />
+              <img class="imagem" src="./src/imagens/bg-cyberstorm-mobile.png" alt="Personagem Cyberstorm" />
+            </picture>
+            <div class="conteudo">
+              <h2 class="nome-personagem">Cyberstorm</h2>
+              <p class="descricao">Kael Takeda, conhecido no submundo digital como "Cyberstorm"...</p>
+            </div>
+          </div> <!-- ✅ Aqui fecha Cyberstorm corretamente -->
+        
+          <div class="personagem">
+            <picture>
+              <source srcset="./src/imagens/bg-CodePixie.png" media="(min-width: 768px)" />
+              <img class="imagem" src="./src/imagens/bg-codepixie-mobile.png" alt="Personagem CodePixie" />
+            </picture>
+            <div class="conteudo">
+              <h2 class="nome-personagem">CodePixie</h2>
+              <p class="descricao">Lía Nakamura, conhecida como "CodePixie"... </p>
+            </div>
+          </div>
+        
+          <div class="personagem">
+            <picture>
+              <source srcset="./src/imagens/bg-Hexblade.png" media="(min-width: 768px)" />
+              <img class="imagem" src="./src/imagens/bg-hexblade-mobile.png" alt="Personagem HexBlade" />
+            </picture>
+            <div class="conteudo">
+              <h2 class="nome-personagem">HexBlade</h2>
+              <p class="descricao">Ryo Tanaka, conhecido como "HexBlade"... </p>
+            </div>
+          </div>
+        
+          <div class="personagem">
+            <picture>
+              <source srcset="./src/imagens/bg-neonpulse.png" media="(min-width: 768px)" />
+              <img class="imagem" src="./src/imagens/bg-neonpulse-mobile.png" alt="Personagem NeonPulse" />
+            </picture>
+            <div class="conteudo">
+              <h2 class="nome-personagem">NeonPulse</h2>
+              <p class="descricao">NeonPulse Ayla Vega, conhecida como "NeonPulse"... </p>
+            </div>
+          </div>
+        
+          <div class="personagem">
+            <picture>
+              <source srcset="./src/imagens/bg-codebreaker.png" media="(min-width: 768px)" />
+              <img class="imagem" src="./src/imagens/bg-codebreaker-mobile.png" alt="Personagem Codebreaker" />
+            </picture>
+            <div class="conteudo">
+              <h2 class="nome-personagem">Codebreaker</h2>
+              <p class="descricao">No coração de uma estação espacial abandonada... </p>
+            </div>
+          </div>
+    </main>
+    <ul class="botoes"> <!-- Lista não ordenada para os botões -->
+        <li> <!-- Item da lista -->
+            <button class="botao cyberstorm selecionado">
+                <img src="./src/imagens/icone-cyberstorm.png" alt="Icone cyberstorm">
+                <!-- Ícone do personagem Cyberstorm -->
+            </button>
+        </li>
+
+        <li>
+            <button class="botao codepixie">
+                <img src="./src/imagens/icone-codepixie.png" alt="Icone codepixie" />
+            </button>
+        </li>
+        <li>
+            <button class="botao hexblade">
+                <img src="./src/imagens/icone-hexblade.png" alt="Icone hexblade" />
+            </button>
+        </li>
+        <li>
+            <button class="botao neonpulse">
+                <img src="./src/imagens/icone-neonpulse.png" alt="Icone neonpulse" />
+            </button>
+        </li>
+        <li>
+            <button class="botao codebreaker">
+                <img src="./src/imagens/icone-codebreaker.png" alt="Icone codebreaker" />
+            </button>
+        </li>
+    </ul> <!-- Item da lista -->
+    <script src="./src/js/index.js">
+    </script> <!-- Link para o arquivo JavaScript -->
+</body>
+
+</html>
